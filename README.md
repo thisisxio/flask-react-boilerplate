@@ -40,6 +40,14 @@ Set up the following environment variables:
 - NextJs
 - Tailwind
 
+### Install Packages
+
+`npm install`
+
+### Run Front End
+
+`npm run dev`
+
 ## Back End
 
 - Python/Flask
