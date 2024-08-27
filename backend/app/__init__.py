@@ -1,4 +1,6 @@
 from flask import Flask
+from json import JSONEncoder
+from decimal import Decimal
 from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Api
 from flask_cors import CORS
@@ -7,8 +9,16 @@ from flask_migrate import Migrate
 
 db = SQLAlchemy()
 
+
+class CustomJSONEncoder(JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Decimal):
+            return float(obj)
+        return super(CustomJSONEncoder, self).default(obj)
+
 def create_app():
     app = Flask(__name__)
+    app.json_encoder = CustomJSONEncoder
     app.config.from_object(Config)
 
     db.init_app(app)

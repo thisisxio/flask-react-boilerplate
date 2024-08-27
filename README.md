@@ -23,6 +23,8 @@ create your database: `CREATE DATABASE your_db_name;`
 
 create database user: `CREATE USER sammy WITH PASSWORD 'password';`
 
+connect to database: `psql -h localhost -U USER -d you_db_name`
+
 ## Environment Variables
 
 Set up the following environment variables:
