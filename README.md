@@ -1,4 +1,44 @@
-# flask-react-boilerplate
+# Flask-React-NextJs-PostgreSQL Boilerplate
+
+Simple boilerplate for a fullstack application.
+
+## Requirements
+
+Before starting, make sure that your packages are up to date. If you are using HomeBrew, run:
+
+`brew update`
+`brew upgrade`
+
+To make sure that you have installed python, postgres@14, run:
+
+`brew services list`
+
+### Set up your database
+
+Assuming that you have installed Postres.
+
+On your terminal, log into Postgres `sudo -iu postgres psql`
+
+create your database: `CREATE DATABASE your_db_name;`
+
+create database user: `CREATE USER sammy WITH PASSWORD 'password';`
+
+## Environment Variables
+
+Set up the following environment variables:
+
+`FLASK_APP= run.py`
+`FLASK_DEBUG=1`
+`FLASK_ENV=development`
+`POSTGRES_HOST=postgres`
+`POSTGRES_PORT=5432`
+` DATABASE_URL=postgresql://``USERNAME:PASSWORD@localhost:5432/your_db_name `
+
+## Front End
+
+- React
+- NextJs
+- Tailwind
 
 ## Back End
 
