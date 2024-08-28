@@ -74,3 +74,9 @@ Run these commands to create the Tables for your local db:
 1. Create virtual environment: `python -m venv myenv`
 2. Activate environment: `source myenv/bin/activate`
 3. Run application: `flask run`
+
+## Next Steps
+
+- Authentication
+- User Management?
+- Log in screens
