@@ -8,10 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        green: "#375D5C",
+        yellow: "#D4C79A",
+        black: "#050909",
+        lightGrey: "#ebeeee",
+      },
+      fontFamily: {
+        title: ["Poppins", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
       },
     },
   },
